@@ -1,0 +1,74 @@
+.clients {
+  padding: 60px 0px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
+  }
+}
+
+.clients--title {
+  margin: 0px;
+  margin-bottom: 30px;
+
+  color: getColor(title);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
+.clients--block-clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.clients--link {
+  display: flex;
+  padding: 0px;
+  margin-bottom: 30px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #afb1b8;
+  transition: $animation;
+
+  &:hover,
+  &:focus {
+    border: 1px solid getColor(accent);
+    color: getColor(accent);
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 2 * 15px) / 2);
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 4 * 15px) / 3);
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    width: 170px;
+  }
+}
+
+.clients--icon {
+  fill: currentColor;
+  margin: auto;
+}

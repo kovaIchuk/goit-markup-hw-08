@@ -1,0 +1,38 @@
+body.modal-open {
+  overflow: hidden;
+}
+
+.header-border {
+  border-bottom: solid 1px  #ececec;
+}
+
+.container.header {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.header--design-logo {
+  color: getColor(accent);
+}
+
+.header--logo {
+  display: inline-block;
+  color: #000000;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}

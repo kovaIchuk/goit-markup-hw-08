@@ -1,0 +1,20 @@
+@import './utils/variables';
+@import './utils/modern-normalize';
+
+@import './basic/fonts';
+@import './basic/container-first';
+
+//html
+@import './components/header-first';
+@import './components/menu-first';
+@import './components/hero-first';
+@import './components/modal-form-first';
+@import './components/advantages-first';
+@import './components/employment-first';
+@import './components/about-first';
+@import './components/clients-first';
+@import './components/footer-first';
+
+//portfolio
+@import './components/portfolio-first';
+@import './components/galery-first';

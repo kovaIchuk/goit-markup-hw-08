@@ -1,0 +1,66 @@
+.portfolio {
+  padding: 60px 0px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
+  }
+}
+
+.portfolio--title {
+  display: none;
+}
+
+.portfolio--buttons {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    cursor: pointer;
+  }
+}
+
+.portfolio--button {
+  margin-right: 8px;
+  margin-bottom: 15px;
+  padding: 6px 22px;
+
+  color: getColor(title);
+
+  border: 0px solid transparent;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  transition: $animation;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+
+  &:hover,
+  &:focus {
+    color: getColor(white-color);
+    background-color: getColor(accent);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}

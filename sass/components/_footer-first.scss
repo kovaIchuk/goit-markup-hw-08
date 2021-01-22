@@ -1,0 +1,244 @@
+.footer {
+  background-color: #2f303a;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 0px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.footer--design-logo {
+  color: getColor(accent);
+}
+
+.footer--logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: getColor(white-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.adress--text {
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  color: getColor(white-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+    width: 231px;
+  }
+}
+
+.adress--link {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.6);
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+    width: 231px;
+  }
+}
+
+.social {
+  font-size: 0px;
+  margin: 60px 0px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    margin-left: 165px;
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 206px;
+    height: 80px;
+    margin-top: 12px;
+    margin-left: 70px;
+  }
+}
+
+.social--title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: getColor(white-color);
+}
+
+.social--link {
+  display: inline-flex;
+  color: getColor(white-color);
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:hover,
+    &:focus {
+      background: getColor(accent);
+    }
+  }
+}
+
+.social--icon {
+  fill: currentColor;
+  margin: auto;
+}
+
+.subscription {
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    margin-left: 93px;
+    width: 570px;
+    height: 86px;
+  }
+}
+
+.subscription--text {
+  display: block;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: getColor(white-color);
+}
+
+.subscription--email {
+  display: block;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+  color: getColor(white-color);
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-right: 12px;
+    width: 358px;
+  }
+
+  &::placeholder {
+    font-style: 400;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscription--button {
+  display: flex;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  justify-content: center;
+
+  color: getColor(white-color);
+  background: getColor(accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  
+
+  &::after {
+    content: '';
+    display: block;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon-send.svg);
+  }
+}
+
+.subscription--form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer--wrapper-second {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 76px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
+}
+
+.footer--wrapper {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
